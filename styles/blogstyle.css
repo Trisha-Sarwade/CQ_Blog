@@ -72,3 +72,7 @@
     display: table;
     clear: both;
 }
+
+.tag{
+    margin-left: 5px;
+}
