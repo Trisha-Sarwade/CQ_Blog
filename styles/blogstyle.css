@@ -1,6 +1,6 @@
 .bloghead {
-    background-image: url(../images/blogheader5.png);
-    min-height: 100vh;
+    background-image: url(../images/blogheader6.png);
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,7 +31,11 @@
     font-weight: 600;
     width: max-content;
 }
-
+@media screen and (max-width: 1192px) {
+    .bloghead{
+        height: 50vh;
+    }
+}
 .row {
     width: 100%;
 }
