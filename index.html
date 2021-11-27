@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/08f5394404.js" crossorigin="anonymous"></script>
 
     <title>Our Blogs</title>
 </head>
@@ -82,7 +83,37 @@
             <button class="btnf" onclick="filterSelection('intern')"> Internships</button><br>
             <button class="btnf" onclick="filterSelection('placed')"> Placement</button><br>
     </div>
-
+    <div class="filter_mob">
+                <!-- Default dropup button -->
+        <div class="ficonsur">
+            <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-filter ficon"></i>
+                </button>
+                <ul class="dropdown-menu fildrop">
+                  <!-- Dropdown menu links -->
+                    
+                    <button class="btnf activef" onclick="filterSelection('all')"> Show all</button><br>
+                    <h4 class="filteropt">Department</h4>
+                    <button class="btnf" onclick="filterSelection('IM')"> IM</button><br>
+                    <button class="btnf" onclick="filterSelection('NA')"> NA</button><br>
+                    <button class="btnf" onclick="filterSelection('EE')"> EE</button><br>
+                    <button class="btnf" onclick="filterSelection('CS')"> CS</button><br>
+                    <h4 class="filteropt">Series</h4>
+                    <button class="btnf" onclick="filterSelection('core')"> Core Combat</button><br>
+                    <button class="btnf" onclick="filterSelection('consul')"> Consultalks</button><br>
+                    <button class="btnf" onclick="filterSelection('product')"> Product</button><br>
+                    <button class="btnf" onclick="filterSelection('FMCG')"> FMCG Luminaries</button><br>
+                    <button class="btnf" onclick="filterSelection('finforte')"> Finforte</button><br>
+                    <button class="btnf" onclick="filterSelection('ml')"> ML</button><br>
+                    <h4 class="filteropt">Type</h4>
+                    <button class="btnf" onclick="filterSelection('intern')"> Internships</button><br>
+                    <button class="btnf" onclick="filterSelection('placed')"> Placement</button><br>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
     <div class="coloumn right">
         <div class="latestlist">
             <div class="blogc card mb-3 EE core placed" style="max-width: 840px;">

@@ -31,6 +31,25 @@
     font-weight: 600;
     width: max-content;
 }
+ 
+.ficonsur{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    border-radius: 100px;
+    padding-top: 13px;
+    display: none;
+    z-index: 10;
+}
+
+.ficon{
+    color: whitesmoke;
+    font-size: 30px;
+}
+.fildrop{
+    overflow-y: scroll;
+}
 @media screen and (max-width: 1200px) {
     .bloghead{
         background-position: 0% 9%;
@@ -41,7 +60,7 @@
         margin-top: 30px;
     }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1025px) {
     .bloghead{
         background-position: 0% 9%;
         background-size: 100%;
@@ -49,6 +68,17 @@
     }
     .latest-blogs{
         margin-top: 30px;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        position: relative;
+        left: 54%;
+        transform: translateX(-50%);
+    }
+    .ficonsur{
+        display: block;
     }
 }
 @media screen and (max-width: 881px) {
@@ -111,7 +141,7 @@
 }
 
 .right {
-    width: 80%;
+    width: 70%;
     /* float: right; */
     display: inline-block;
 }
@@ -120,7 +150,7 @@
     width: 80%;
     position: relative;
     margin-top: 30px;
-    margin-left: 10%;
+    margin-left: 20px;
     /*width: 80%;*/
     display: flex;
     flex-wrap: wrap;
