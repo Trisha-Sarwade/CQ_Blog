@@ -1,3 +1,12 @@
+html {
+    margin: 1%;
+}
+
+.navbar {
+    padding: 0.5%;
+    margin: 0.5%;
+}
+
 .bloghead {
     background-image: url(../images/blogheader8.png);
     height: 100vh;
@@ -31,76 +40,84 @@
     font-weight: 600;
     width: max-content;
 }
+
 @media screen and (max-width: 1200px) {
-    .bloghead{
+    .bloghead {
         background-position: 0% 9%;
         background-size: 100%;
         height: 60vh;
     }
-    .latest-blogs{
+    .latest-blogs {
         margin-top: 30px;
     }
 }
+
 @media screen and (max-width: 1000px) {
-    .bloghead{
+    .bloghead {
         background-position: 0% 9%;
         background-size: 100%;
         height: 55vh;
     }
-    .latest-blogs{
+    .latest-blogs {
         margin-top: 30px;
     }
 }
+
 @media screen and (max-width: 881px) {
-    .bloghead{
+    .bloghead {
         background-position: 0% 9%;
         background-size: 100%;
         height: 50vh;
     }
-    .latest-blogs{
+    .latest-blogs {
         margin-top: 30px;
     }
 }
+
 @media screen and (max-width: 706px) {
-    .bloghead{
+    .bloghead {
         background-position: 0% 9%;
         background-size: 100%;
         height: 39vh;
     }
-    .latest-blogs{
+    .latest-blogs {
         margin-top: 30px;
     }
 }
+
 @media screen and (max-width: 581px) {
-    .bloghead{
+    .bloghead {
         background-position: 0% 9%;
         background-size: 100%;
         height: 35vh;
     }
-    .latest-blogs{
+    .latest-blogs {
         margin-top: 30px;
     }
 }
+
 @media screen and (max-width: 451px) {
-    .bloghead{
+    .bloghead {
         background-position: 0% 9%;
         background-size: 100%;
         height: 30vh;
     }
-    .latest-blogs{
+    .latest-blogs {
         margin-top: 20px;
     }
 }
+
 @media screen and (max-width: 351px) {
-    .bloghead{
+    .bloghead {
         background-position: 0% 9%;
         background-size: 100%;
         height: 25vh;
     }
-    .latest-blogs{
+    .latest-blogs {
         margin-top: 5px;
     }
 }
+
 .row {
     width: 100%;
 }
@@ -143,11 +160,11 @@
     clear: both;
 }
 
-.tag{
+.tag {
     margin-left: 5px;
 }
 
-.show2{
+.show2 {
     display: flex !important;
 }
 
@@ -158,15 +175,18 @@
     background-color: #f1f1f1;
     cursor: pointer;
     width: 100%;
-  }
+}
+
 .btnf:hover {
     background-color: #ddd;
-} 
+}
+
 .btnf.activef {
     background-color: #00305b;
     color: white;
-  }
-.filteropt{
+}
+
+.filteropt {
     text-align: center;
     font-weight: 600;
 }
