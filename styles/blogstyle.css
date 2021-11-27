@@ -4,7 +4,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     background-size: 100%;
 }
 
@@ -31,9 +31,74 @@
     font-weight: 600;
     width: max-content;
 }
-@media screen and (max-width: 1192px) {
+@media screen and (max-width: 1200px) {
     .bloghead{
+        background-position: 0% 9%;
+        background-size: 100%;
+        height: 60vh;
+    }
+    .latest-blogs{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .bloghead{
+        background-position: 0% 9%;
+        background-size: 100%;
+        height: 55vh;
+    }
+    .latest-blogs{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 881px) {
+    .bloghead{
+        background-position: 0% 9%;
+        background-size: 100%;
         height: 50vh;
+    }
+    .latest-blogs{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 706px) {
+    .bloghead{
+        background-position: 0% 9%;
+        background-size: 100%;
+        height: 39vh;
+    }
+    .latest-blogs{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 581px) {
+    .bloghead{
+        background-position: 0% 9%;
+        background-size: 100%;
+        height: 35vh;
+    }
+    .latest-blogs{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 451px) {
+    .bloghead{
+        background-position: 0% 9%;
+        background-size: 100%;
+        height: 30vh;
+    }
+    .latest-blogs{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 351px) {
+    .bloghead{
+        background-position: 0% 9%;
+        background-size: 100%;
+        height: 25vh;
+    }
+    .latest-blogs{
+        margin-top: 5px;
     }
 }
 .row {
@@ -82,7 +147,7 @@
     margin-left: 5px;
 }
 
-.show{
+.show2{
     display: flex !important;
 }
 
@@ -98,7 +163,7 @@
     background-color: #ddd;
 } 
 .btnf.activef {
-    background-color: #666;
+    background-color: #00305b;
     color: white;
   }
 .filteropt{
