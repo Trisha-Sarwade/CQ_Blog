@@ -1,3 +1,6 @@
+html {
+    margin: 1%;
+}
 .bloghead {
     background-image: url(../images/blogheader8.png);
     height: 100vh;
