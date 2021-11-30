@@ -1,3 +1,4 @@
+
 .bloghead {
     background-image: url(../images/blogheader8.png);
     height: 100vh;
@@ -45,6 +46,10 @@
 
 .ficon{
     color: whitesmoke;
+    font-size: 30px;
+}
+.ficon2{
+    color: rgb(52, 50, 50);
     font-size: 30px;
 }
 .fildrop{
@@ -144,6 +149,7 @@
     width: 70%;
     /* float: right; */
     display: inline-block;
+    float: right;
 }
 
 .latestlist {
@@ -198,5 +204,5 @@
   }
 .filteropt{
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
 }

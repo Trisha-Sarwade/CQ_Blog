@@ -64,132 +64,197 @@
     <div class="latest-blogs">
         <h1>Latest Blogs</h1>
     </div>
-    <div class="coloumn left" id="btnContainer">
-            <h4 class="filteropt">FILTER</h4>
-            <button class="btnf activef" onclick="filterSelection('all')"> Show all</button><br>
-            <h4 class="filteropt">Department</h4>
-            <button class="btnf" onclick="filterSelection('IM')"> IM</button><br>
-            <button class="btnf" onclick="filterSelection('NA')"> NA</button><br>
-            <button class="btnf" onclick="filterSelection('EE')"> EE</button><br>
-            <button class="btnf" onclick="filterSelection('CS')"> CS</button><br>
-            <h4 class="filteropt">Series</h4>
-            <button class="btnf" onclick="filterSelection('core')"> Core Combat</button><br>
-            <button class="btnf" onclick="filterSelection('consul')"> Consultalks</button><br>
-            <button class="btnf" onclick="filterSelection('product')"> Product</button><br>
-            <button class="btnf" onclick="filterSelection('FMCG')"> FMCG Luminaries</button><br>
-            <button class="btnf" onclick="filterSelection('finforte')"> Finforte</button><br>
-            <button class="btnf" onclick="filterSelection('ml')"> ML</button><br>
-            <h4 class="filteropt">Type</h4>
-            <button class="btnf" onclick="filterSelection('intern')"> Internships</button><br>
-            <button class="btnf" onclick="filterSelection('placed')"> Placement</button><br>
-    </div>
-    <div class="filter_mob">
-                <!-- Default dropup button -->
-        <div class="ficonsur">
-            <div class="btn-group dropup">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-filter ficon"></i>
-                </button>
-                <ul class="dropdown-menu fildrop">
-                  <!-- Dropdown menu links -->
-                    
+        <div class="coloumn left" id="btnContainer">
+                    <h5 class="filteropt filtericon"><i class="fas fa-filter ficon2"></i></h5>
                     <button class="btnf activef" onclick="filterSelection('all')"> Show all</button><br>
-                    <h4 class="filteropt">Department</h4>
-                    <button class="btnf" onclick="filterSelection('IM')"> IM</button><br>
-                    <button class="btnf" onclick="filterSelection('NA')"> NA</button><br>
-                    <button class="btnf" onclick="filterSelection('EE')"> EE</button><br>
-                    <button class="btnf" onclick="filterSelection('CS')"> CS</button><br>
-                    <h4 class="filteropt">Series</h4>
-                    <button class="btnf" onclick="filterSelection('core')"> Core Combat</button><br>
-                    <button class="btnf" onclick="filterSelection('consul')"> Consultalks</button><br>
-                    <button class="btnf" onclick="filterSelection('product')"> Product</button><br>
-                    <button class="btnf" onclick="filterSelection('FMCG')"> FMCG Luminaries</button><br>
-                    <button class="btnf" onclick="filterSelection('finforte')"> Finforte</button><br>
-                    <button class="btnf" onclick="filterSelection('ml')"> ML</button><br>
-                    <h4 class="filteropt">Type</h4>
-                    <button class="btnf" onclick="filterSelection('intern')"> Internships</button><br>
-                    <button class="btnf" onclick="filterSelection('placed')"> Placement</button><br>
-                </ul>
-            </div>
-            
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h5 class="filteropt">Department</h5>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <button class="btnf" onclick="filterSelection('IM')"> IM</button>
+                                <button class="btnf" onclick="filterSelection('NA')"> NA</button>
+                                <button class="btnf" onclick="filterSelection('EE')"> EE</button>
+                                <button class="btnf" onclick="filterSelection('CS')"> CS</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h5 class="filteropt">Series</h5>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <button class="btnf" onclick="filterSelection('core')"> Core Combat</button>
+                                <button class="btnf" onclick="filterSelection('consul')"> Consultalks</button>
+                                <button class="btnf" onclick="filterSelection('product')"> Product</button>
+                                <button class="btnf" onclick="filterSelection('FMCG')"> FMCG Luminaries</button>
+                                <button class="btnf" onclick="filterSelection('finforte')"> Finforte</button>
+                                <button class="btnf" onclick="filterSelection('ml')"> ML</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h5 class="filteropt">Type</h5>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <button class="btnf" onclick="filterSelection('intern')"> Internships</button>
+                                <button class="btnf" onclick="filterSelection('placed')"> Placement</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                
         </div>
-    </div>
-    <div class="coloumn right">
-        <div class="latestlist">
-            <div class="blogc card mb-3 EE core placed" style="max-width: 840px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="images/banner2.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="filter_mob">
+                    <!-- Default dropup button -->
+            <div class="ficonsur">
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-filter ficon"></i>
+                    </button>
+                    <ul class="dropdown-menu fildrop">
+                    <!-- Dropdown menu links -->
+                    <button class="btnf activef" onclick="filterSelection('all')"> Show all</button><br>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h5 class="filteropt">Department</h5>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <button class="btnf" onclick="filterSelection('IM')"> IM</button><br>
+                                <button class="btnf" onclick="filterSelection('NA')"> NA</button><br>
+                                <button class="btnf" onclick="filterSelection('EE')"> EE</button><br>
+                                <button class="btnf" onclick="filterSelection('CS')"> CS</button><br>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h5 class="filteropt">Series</h5>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <button class="btnf" onclick="filterSelection('core')"> Core Combat</button><br>
+                                <button class="btnf" onclick="filterSelection('consul')"> Consultalks</button><br>
+                                <button class="btnf" onclick="filterSelection('product')"> Product</button><br>
+                                <button class="btnf" onclick="filterSelection('FMCG')"> FMCG Luminaries</button><br>
+                                <button class="btnf" onclick="filterSelection('finforte')"> Finforte</button><br>
+                                <button class="btnf" onclick="filterSelection('ml')"> ML</button><br>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h5 class="filteropt">Type</h5>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <button class="btnf" onclick="filterSelection('intern')"> Internships</button><br>
+                                <button class="btnf" onclick="filterSelection('placed')"> Placement</button><br>
+                            </div>
+                        </div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="coloumn right">
+            <div class="latestlist">
+                <div class="blogc card mb-3 EE core placed" style="max-width: 840px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/banner2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
 
-                            <h5 class="card-title">Card title</h5>
-                            <button type="button" class="btn btn-outline-primary btn-sm tag">EE</button>
-                            <button type="button" class="btn btn-outline-primary btn-sm tag">CORE</button>
-                            <button type="button" class="btn btn-outline-primary btn-sm tag">Placement</button>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title">Card title</h5>
+                                <button type="button" class="btn btn-outline-primary btn-sm tag">EE</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm tag">CORE</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm tag">Placement</button>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="blogc card mb-3 IM ml intern" style="max-width: 840px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="images/banner2.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
+                <div class="blogc card mb-3 IM ml intern" style="max-width: 840px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/banner2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
 
-                            <h5 class="card-title">Card title</h5>
-                            <button type="button" class="btn btn-outline-primary btn-sm tag">IM</button>
-                            <button type="button" class="btn btn-outline-primary btn-sm tag">ML</button>
-                            <button type="button" class="btn btn-outline-primary btn-sm tag">Internship</button>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title">Card title</h5>
+                                <button type="button" class="btn btn-outline-primary btn-sm tag">IM</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm tag">ML</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm tag">Internship</button>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="blogc card mb-3 NA finforte placed" style="max-width: 840px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="images/banner2.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
+                <div class="blogc card mb-3 NA finforte placed" style="max-width: 840px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/banner2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
 
-                            <h5 class="card-title">Card title</h5>
-                            <button type="button" class="btn btn-outline-primary btn-sm tag">NA</button>
-                            <button type="button" class="btn btn-outline-primary btn-sm tag">FINANCE</button>
-                            <button type="button" class="btn btn-outline-primary btn-sm tag">Placement</button>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title">Card title</h5>
+                                <button type="button" class="btn btn-outline-primary btn-sm tag">NA</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm tag">FINANCE</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm tag">Placement</button>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="blogc card cardr mb-3 CS consul intern" style="max-width: 840px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="images/banner2.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
+                <div class="blogc card cardr mb-3 CS consul intern" style="max-width: 840px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/banner2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
 
-                            <h5 class="card-title">Card title</h5>
-                            <button type="button" class="btn btn-outline-primary btn-sm tag">CS</button>
-                            <button type="button" class="btn btn-outline-primary btn-sm tag">CONSULTING</button>
-                            <button type="button" class="btn btn-outline-primary btn-sm tag">Internship</button>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title">Card title</h5>
+                                <button type="button" class="btn btn-outline-primary btn-sm tag">CS</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm tag">CONSULTING</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm tag">Internship</button>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
@@ -208,8 +273,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
+    <script src="fixdiv.js"></script>
 </body>
 
 </html>
