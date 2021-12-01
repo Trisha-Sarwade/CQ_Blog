@@ -1,3 +1,4 @@
+
 html {
     margin: 1%;
 }
@@ -49,6 +50,8 @@ html {
     font-weight: 600;
     width: max-content;
 }
+ 
+
 
 .ficonsur {
     position: fixed;
@@ -61,14 +64,19 @@ html {
     z-index: 10;
 }
 
-.ficon {
+
+.ficon{
     color: whitesmoke;
     font-size: 30px;
 }
-
-.fildrop {
+.ficon2{
+    color: rgb(52, 50, 50);
+    font-size: 30px;
+}
+.fildrop{
     overflow-y: scroll;
 }
+
 
 @media screen and (max-width: 1200px) {
     .bloghead {
@@ -80,6 +88,8 @@ html {
         margin-top: 30px;
     }
 }
+
+
 
 @media screen and (max-width: 1025px) {
     .bloghead {
@@ -98,6 +108,9 @@ html {
         left: 54%;
         transform: translateX(-50%);
     }
+
+    
+
     .ficonsur {
         display: block;
     }
@@ -171,6 +184,7 @@ html {
     width: 70%;
     /* float: right; */
     display: inline-block;
+    float: right;
 }
 
 .latestlist {
@@ -228,5 +242,5 @@ html {
 
 .filteropt {
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
 }
