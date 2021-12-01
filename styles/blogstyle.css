@@ -1,4 +1,22 @@
 
+html {
+    margin: 1%;
+}
+
+.navbar {
+    padding: 0.5%;
+    margin: 0.5%;
+    margin-top: 0%;
+}
+
+#login {
+    float: right;
+    background-color: transparent;
+    border: 0ch;
+    color: black;
+    font-size: small;
+}
+
 .bloghead {
     background-image: url(../images/blogheader8.png);
     height: 100vh;
@@ -33,7 +51,9 @@
     width: max-content;
 }
  
-.ficonsur{
+
+
+.ficonsur {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -43,6 +63,7 @@
     display: none;
     z-index: 10;
 }
+
 
 .ficon{
     color: whitesmoke;
@@ -55,87 +76,101 @@
 .fildrop{
     overflow-y: scroll;
 }
+
+
 @media screen and (max-width: 1200px) {
-    .bloghead{
+    .bloghead {
         background-position: 0% 9%;
         background-size: 100%;
         height: 60vh;
     }
-    .latest-blogs{
+    .latest-blogs {
         margin-top: 30px;
     }
 }
+
+
+
 @media screen and (max-width: 1025px) {
-    .bloghead{
+    .bloghead {
         background-position: 0% 9%;
         background-size: 100%;
         height: 55vh;
     }
-    .latest-blogs{
+    .latest-blogs {
         margin-top: 30px;
     }
-    .left{
+    .left {
         display: none;
     }
-    .right{
+    .right {
         position: relative;
         left: 54%;
         transform: translateX(-50%);
     }
-    .ficonsur{
+
+    
+
+    .ficonsur {
         display: block;
     }
 }
+
 @media screen and (max-width: 881px) {
-    .bloghead{
+    .bloghead {
         background-position: 0% 9%;
         background-size: 100%;
         height: 50vh;
     }
-    .latest-blogs{
+    .latest-blogs {
         margin-top: 30px;
     }
 }
+
 @media screen and (max-width: 706px) {
-    .bloghead{
+    .bloghead {
         background-position: 0% 9%;
         background-size: 100%;
         height: 39vh;
     }
-    .latest-blogs{
+    .latest-blogs {
         margin-top: 30px;
     }
 }
+
 @media screen and (max-width: 581px) {
-    .bloghead{
+    .bloghead {
         background-position: 0% 9%;
         background-size: 100%;
         height: 35vh;
     }
-    .latest-blogs{
+    .latest-blogs {
         margin-top: 30px;
     }
 }
+
 @media screen and (max-width: 451px) {
-    .bloghead{
+    .bloghead {
         background-position: 0% 9%;
         background-size: 100%;
         height: 30vh;
     }
-    .latest-blogs{
+    .latest-blogs {
         margin-top: 20px;
     }
 }
+
 @media screen and (max-width: 351px) {
-    .bloghead{
+    .bloghead {
         background-position: 0% 9%;
         background-size: 100%;
         height: 25vh;
     }
-    .latest-blogs{
+    .latest-blogs {
         margin-top: 5px;
     }
 }
+
 .row {
     width: 100%;
 }
@@ -179,11 +214,11 @@
     clear: both;
 }
 
-.tag{
+.tag {
     margin-left: 5px;
 }
 
-.show2{
+.show2 {
     display: flex !important;
 }
 
@@ -194,15 +229,18 @@
     background-color: #f1f1f1;
     cursor: pointer;
     width: 100%;
-  }
+}
+
 .btnf:hover {
     background-color: #ddd;
-} 
+}
+
 .btnf.activef {
     background-color: #00305b;
     color: white;
-  }
-.filteropt{
+}
+
+.filteropt {
     text-align: center;
     font-weight: 500;
 }
