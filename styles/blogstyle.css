@@ -8,6 +8,14 @@ html {
     margin-top: 0%;
 }
 
+#login {
+    float: right;
+    background-color: transparent;
+    border: 0ch;
+    color: black;
+    font-size: small;
+}
+
 .bloghead {
     background-image: url(../images/blogheader8.png);
     height: 100vh;
